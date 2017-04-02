@@ -1,7 +1,9 @@
 import configs from './configs'
-import scenes from './scenes'
+import arrays from './arrays'
+import strings from './strings'
 
 export {
     configs,
-    scenes
+    arrays,
+    strings
 }

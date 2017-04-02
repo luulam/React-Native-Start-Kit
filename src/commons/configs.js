@@ -1,14 +1,14 @@
 import { Platform } from 'react-native';
-
+import { getPlatformValue } from '../utils';
 export default {
 
-    // Badge
+  // Badge
   badgeBg: '#ED1727',
   badgeColor: '#fff',
 
 
   // Button
-  btnFontFamily: (Platform.OS === 'ios') ? 'HelveticaNeue' : 'Roboto_medium',
+  btnFontFamily: getPlatformValue('HelveticaNeue', 'Roboto_medium'),
   btnDisabledBg: '#b5b5b5',
   btnDisabledClr: '#f1f1f1',
   buttonPadding: 6,
@@ -33,7 +33,7 @@ export default {
 
 
   // Font
-  fontFamily: (Platform.OS === 'ios') ? 'HelveticaNeue' : 'Roboto',
+  fontFamily: getPlatformValue('HelveticaNeue', 'Roboto'),
   fontSizeBase: 15,
 
   get fontSizeH1() {
@@ -49,27 +49,27 @@ export default {
 
   // Footer
   footerHeight: 55,
-  footerDefaultBg: (Platform.OS === 'ios') ? '#F8F8F8' : '#4179F7',
+  footerDefaultBg: getPlatformValue('#F8F8F8', '#4179F7'),
 
 
   // FooterTab
-  tabBarTextColor: (Platform.OS === 'ios') ? '#6b6b6b' : '#b3c7f9',
-  tabBarActiveTextColor: (Platform.OS === 'ios') ? '#007aff' : '#fff',
-  tabActiveBgColor: (Platform.OS === 'ios') ? '#e4f0fe' : undefined,
+  tabBarTextColor: getPlatformValue('#6b6b6b', '#b3c7f9'),
+  tabBarActiveTextColor: getPlatformValue('#007aff', '#fff'),
+  tabActiveBgColor: getPlatformValue('#e4f0fe', undefined),
 
 
   // Header
   iosToolbarBtnColor: '#007aff',
-  toolbarDefaultBg: (Platform.OS === 'ios') ? '#F8F8F8' : '#4179F7',
-  toolbarHeight: (Platform.OS === 'ios') ? 64 : 56,
-  toolbarIconSize: (Platform.OS === 'ios') ? 20 : 22,
+  toolbarDefaultBg: getPlatformValue('#F8F8F8', '#4179F7'),
+  toolbarHeight: getPlatformValue(64, 56),
+  toolbarIconSize: getPlatformValue(20, 22),
   toolbarInputColor: '#CECDD2',
   toolbarInverseBg: '#222',
-  toolbarTextColor: (Platform.OS === 'ios') ? '#000' : '#fff',
+  toolbarTextColor: getPlatformValue('#000', '#fff'),
 
   // Icon
   iconFamily: 'Ionicons',
-  iconFontSize: (Platform.OS === 'ios') ? 30 : 28,
+  iconFontSize: getPlatformValue(30, 28),
   iconMargin: 7,
 
 
@@ -87,8 +87,8 @@ export default {
   lineHeightH1: 32,
   lineHeightH2: 27,
   lineHeightH3: 22,
-  iconLineHeight: (Platform.OS === 'ios') ? 37 : 30,
-  lineHeight: (Platform.OS === 'ios') ? 20 : 26,
+  iconLineHeight: getPlatformValue(37, 30),
+  lineHeight: getPlatformValue(20, 26),
 
 
   // List
@@ -108,7 +108,7 @@ export default {
 
 
   // Radio Button
-  radioBtnSize: (Platform.OS === 'ios') ? 25 : 23,
+  radioBtnSize: getPlatformValue(25, 23),
   radioColor: '#7e7e7e',
 
 
@@ -129,7 +129,8 @@ export default {
 
 
   // Title
-  titleFontSize: (Platform.OS === 'ios') ? 17 : 19,
-  subTitleFontSize: (Platform.OS === 'ios') ? 12 : 14,
+  titleFontSize: getPlatformValue(17, 19),
+  subTitleFontSize: getPlatformValue(12, 14),
   subtitleColor: '#8e8e93',
+
 };
