@@ -7,13 +7,16 @@ import thunk from 'redux-thunk';
 import reducers from './redux/reducers';
 
 import RouterWithRedux from './router';
+import App from './app'
 const store = createStore(reducers, applyMiddleware(thunk))
 
-const App = () => {
+const Setup = () => {
     return (
         <Provider store={store}>
-            <RouterWithRedux />
+            <App>
+                <RouterWithRedux />
+            </App>
         </Provider>
     );
 }
-export default App
+export default Setup

@@ -1,0 +1,19 @@
+{
+    "version": "0.1.0",
+    "command": "react-native",
+    "isShellCommand": true,
+    "args": [],
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "log android",
+            "args": ["log-android"]
+        },
+        {
+            "taskName": "log ios",
+            "args": ["log-ios"]
+        }
+    ]
+}

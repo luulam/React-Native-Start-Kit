@@ -13,9 +13,9 @@ const RouterWithRedux = connect()(Router);
 
 const RouterComponent = () => {
     return (
-        <RouterWithRedux hideNavBar={true}>
-            <Scene key={scenes.splash} component={Splash} initial={true} />
-            <Scene key={scenes.home} component={Home} />
+        <RouterWithRedux>
+            <Scene key={scenes.splash} component={Splash} />
+            <Scene key={scenes.home} component={Home} initial={true} />
         </RouterWithRedux>
     )
 }

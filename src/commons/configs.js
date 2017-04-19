@@ -1,7 +1,14 @@
-import { Platform } from 'react-native';
+import { Platform ,Dimensions} from 'react-native';
 import { getPlatformValue } from '../utils';
+const {height, width} = Dimensions.get('window');
 export default {
-
+  // Window
+   get getWidthWindow() {
+    return width
+  },
+  get getHeightWindow() {
+     return height
+  },
   // Badge
   badgeBg: '#ED1727',
   badgeColor: '#fff',
@@ -57,7 +64,17 @@ export default {
   tabBarActiveTextColor: getPlatformValue('#007aff', '#fff'),
   tabActiveBgColor: getPlatformValue('#e4f0fe', undefined),
 
-
+  // SnackBar
+  get snackBarHeight (){
+    return 56
+  },
+  get snackBarWidth (){
+    return width
+  },
+  snackBarColor: '#000',
+  snackBarTextColor: '#fff',
+  snackBarTimeShow: 1500,
+  
   // Header
   iosToolbarBtnColor: '#007aff',
   toolbarDefaultBg: getPlatformValue('#F8F8F8', '#4179F7'),
@@ -124,7 +141,7 @@ export default {
 
 
   // Text
-  textColor: '#000',
+  textColor: '#fff',
   inverseTextColor: '#fff',
 
 

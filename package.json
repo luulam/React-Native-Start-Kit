@@ -9,13 +9,13 @@
 	"dependencies": {
 		"react": "~15.4.0",
 		"react-native": "0.41.2",
-
-		"react-native-vector-icons": "^4.0.0",
 		"react-native-router-flux": "^3.37.0",
-		"redux": "3.5.2",
+		"react-native-vector-icons": "^4.0.0",
 		"react-redux": "4.4.5",
+		"redux": "3.5.2",
 		"redux-actions": "0.11.0",
-		"redux-thunk": "2.1.0"
+		"redux-thunk": "2.1.0",
+		"uuid": "^3.0.1"
 	},
 	"devDependencies": {
 		"babel-jest": "19.0.0",
