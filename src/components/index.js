@@ -1,17 +1,12 @@
-import Icon from './Icon'
-import Button from './Button'
-import Text from './Text'
+
 import SnackBar from './SnackBar'
+import Toast from './Toast'
 
 export {
-    Icon,
-    Button,
-    Text,
-    SnackBar
+    SnackBar,
+    Toast
 }
 export default {
-    Icon,
-    Button,
-    Text,
-    SnackBar
+    SnackBar,
+    Toast
 }

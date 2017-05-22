@@ -1,9 +1,17 @@
-import configs from './configs'
-import arrays from './arrays'
-import strings from './strings'
+import configs from './Configs'
+import arrays from './Arrays'
+import strings from './Strings'
+import constants from './Constants'
+import colors from './Colors'
+import styles from './Styles'
+import images from './Images'
 
 export {
     configs,
     arrays,
-    strings
+    strings,
+    constants,
+    styles,
+    colors,
+    images
 }

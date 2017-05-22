@@ -1,27 +1,28 @@
 import React, { PropTypes, Component } from 'react'
 import { connect } from 'react-redux';
-import { View , Text } from 'react-native';
+import { View, Text } from 'react-native';
 import { configs } from '../commons'
-import styles from './styles/SnackBar'
+import styles from './styles/Toast'
 
-class SnackBar extends Component {
+
+class Toast extends Component {
     static propTypes = {
-        snackBars: PropTypes.array,
+        toasts: PropTypes.array,
     }
 
     static defaultProps = {
-        snackBars: []
+        toasts: []
     }
 
     render() {
-        if (this.props.snackBars.length === 0) return null
+        if (this.props.toasts.length === 0) return null
         return (
             <View style={styles.constant}>
                 {
-                    this.props.snackBars.map((value, index) => {
+                    this.props.toasts.map((value, index) => {
                         return (
-                            <View style={styles.constant} key={index}>
-                                <Text style={{color:'#fff'}}>{value['title']}</Text>
+                            <View style={styles.border} key={index}>
+                                <Text style={styles.text}>{value['title']}</Text>
                             </View>
                         )
                     })
@@ -33,8 +34,7 @@ class SnackBar extends Component {
 }
 const mapStateToProps = (state, ownProps) => {
     return {
-        snackBars: state.app.snaskBars,
-        state: state
+        toasts: state.app.toasts,
     }
 }
-export default connect(mapStateToProps)(SnackBar)
+export default connect(mapStateToProps)(Toast)

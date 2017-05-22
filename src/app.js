@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux';
+import React ,{Component}from 'react';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import Setup from './Setup'
+import reducers from './redux/reducers';
+import AppNavigator from './Navigation'
+const store = createStore(reducers, applyMiddleware(thunk))
 
-import { Text, View, StyleSheet, AsyncStorage, Image, Keyboard } from 'react-native'
-import { scenes, configs } from './commons'
-import {SnackBar} from './components'
-class App extends Component {
-    render() {
-        return (
-            <View style={{ flex: 1 }}>
-                {this.props.children}
-                 <SnackBar></SnackBar>
-            </View>
-        )
-    }
+const App = () => {
+    return (
+        <Provider store={store}>
+            <Setup>
+                <AppNavigator/>
+            </Setup>
+        </Provider>
+    );
 }
-
 export default App

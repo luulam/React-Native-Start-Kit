@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Actions, ActionConst } from 'react-native-router-flux'
-import { Button, Text } from '../components'
-import { View } from 'react-native'
-import { configs } from '../commons'
-import { scenes } from '../router'
-import { showSnackBar } from '../redux/actions/app'
+import { Button } from 'react-native-elements';
+import { View, Text } from 'react-native'
+import { configs, constants, arrays } from '../commons'
+import { showSnackBar, showToast } from '../redux/actions/App'
 
 class Home extends Component {
+    //oprion Header
+    static navigationOptions = {
+        title: 'Chat with Lucy',
+    };
+
+    static state = {
+        test: ''
+    }
     render() {
+        const { navigate } = this.props.navigation;
         return (
-            <View style={{ flex: 1, backgroundColor: 'green' ,justifyContent:'center'}}>
-                <Button onPress={() => this.props.showSnackBar('haha')} title='hahah' />
-                <Button onPress={() => Actions[scenes.splash]()} title='hahah' />
+            <View style={{ flex: 1, backgroundColor: 'green', justifyContent: 'center' }}>
+                <Button onPress={() => this.props.showToast('this is Toast')} title='show toast' />
+                <Button onPress={() => this.props.showSnackBar('this is SnackBar')} title="show snackBar" />
             </View>
         )
     }
@@ -24,7 +31,8 @@ const mapStateToProps = (state, ownProps) => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        showSnackBar: (data) => dispatch(showSnackBar(data))
+        showSnackBar: (data) => dispatch(showSnackBar(data)),
+        showToast: (data) => dispatch(showToast(data))
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Home)
