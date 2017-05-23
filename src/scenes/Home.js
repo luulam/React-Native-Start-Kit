@@ -4,7 +4,7 @@ import { Button } from 'react-native-elements';
 import { View, Text } from 'react-native'
 import { configs, constants, arrays } from '../commons'
 import { showSnackBar, showToast } from '../redux/actions/App'
-
+import styles from './styles/Home'
 class Home extends Component {
     //oprion Header
     static navigationOptions = {
@@ -17,7 +17,7 @@ class Home extends Component {
     render() {
         const { navigate } = this.props.navigation;
         return (
-            <View style={{ flex: 1, backgroundColor: 'green', justifyContent: 'center' }}>
+            <View style={styles.constant}>
                 <Button onPress={() => this.props.showToast('this is Toast')} title='show toast' />
                 <Button onPress={() => this.props.showSnackBar('this is SnackBar')} title="show snackBar" />
             </View>
