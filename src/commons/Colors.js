@@ -1,8 +1,6 @@
-const colors = {
-  toastbg: 'white',
-  toastText: 'black',
-  snackBarbg: 'black',
-  snackBarText: 'white'
+export const colors = {
+  background: '#E7E7E7',
+  accent: '#202938'
 }
 
 export default colors

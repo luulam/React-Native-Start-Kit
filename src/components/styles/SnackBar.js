@@ -4,9 +4,9 @@ const styles = {
     constant: {
         bottom: 0,
         left: 0,
-        height: configs.snackBarHeight,
+        height: configs.snackBar.height,
         width: configs.screenWidth,
-        backgroundColor: colors.snackBarbg,
+        backgroundColor: 'black',
         position: 'absolute',
         zIndex: 1000,
         padding: 20,

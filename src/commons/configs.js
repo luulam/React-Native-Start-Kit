@@ -2,11 +2,26 @@ import { Dimensions, Platform } from 'react-native'
 
 const { width, height } = Dimensions.get('window')
 
-const configs = {
+export const configs = {
     screenWidth: width < height ? width : height,
     screenHeight: width < height ? height : width,
     navBarHeight: (Platform.OS === 'ios') ? 64 : 54,
-    snackBarHeight: 54,
+    statusBarHeight: 22,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    toolBarHeight: 54,
+    borderWidth: 1,
+    borderRadius: 4,
+    opacityPress: .2,
+    snackBar: {
+        height: 54
+    },
+    button: {
+
+    },
+    header: {
+        height: 56,
+    },
     icons: {
         tiny: 15,
         small: 20,
@@ -21,17 +36,10 @@ const configs = {
         logo: 200
     },
     font: {
-        h1: 38,
-        h2: 34,
-        h3: 30,
-        h4: 26,
-        h5: 20,
-        h6: 19,
-        input: 18,
-        regular: 17,
+        big:16,
         medium: 14,
         small: 12,
-        tiny: 8.5
+        tiny: 8
     },
     time: {
         showToast: 1000,

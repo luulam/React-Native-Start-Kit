@@ -9,12 +9,16 @@ ScenesApp = {
     screen: Home,
   }
 }
-const AppNavigator = StackNavigator({
-  ...ScenesApp
-}, {
+
+const AppNavigator = StackNavigator(
+  {
+    ...ScenesApp
+  }, {
     initialRouteName: 'Home',
     mode: Platform.OS === 'ios' ? 'modal' : 'card',
-    headerMode: 'none'
-  });
+    headerMode: 'none',
+    cardStyle: { backgroundColor: 'transparent', shadowOpacity: 0 }
+  }
+)
 
 export default AppNavigator

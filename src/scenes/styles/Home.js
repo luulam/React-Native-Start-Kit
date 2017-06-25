@@ -1,7 +1,9 @@
-export default styles = {
+import { configs, colors, styles } from '../../commons'
+
+export default style = {
+    ...styles,
     constant: {
-        flex: 1,
-        backgroundColor: 'green',
-        justifyContent: 'center'
+        width: configs.screenWidth,
+        height: configs.screenHeight
     }
 }

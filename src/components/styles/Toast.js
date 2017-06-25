@@ -9,7 +9,7 @@ const styles = {
         position: 'absolute',
     },
     border: {
-        backgroundColor: colors.toastbg,
+        backgroundColor: 'white',
         padding: 10,
         marginBottom: 20,
         marginHorizontal: 40,
