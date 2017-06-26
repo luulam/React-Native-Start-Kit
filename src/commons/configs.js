@@ -20,7 +20,7 @@ export const configs = {
 
     },
     header: {
-        height: 56,
+        height: (Platform.OS === 'ios') ? 48 : 54,
     },
     icons: {
         tiny: 15,

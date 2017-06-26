@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Button } from 'react-native-elements';
-import { View, Text } from 'react-native'
+import { View, Text, TextInput } from 'react-native'
 import { Header, Icon } from '../components'
 import { configs, constants, arrays } from '../commons'
 import { showSnackBar, showToast } from '../redux/actions/App'
@@ -10,20 +9,22 @@ class Home extends Component {
     //oprion Header
     static navigationOptions = {
         tabBarIcon: ({ tintColor }) => (
-            <Icon name='home' color={tintColor} />
+            <Icon name='search' color={tintColor} />
         ),
     };
 
+    state = {
+        textSearch: ''
+    }
     render() {
         const { navigate } = this.props.navigation;
         return (
             <View>
-                <Header>
-                    <Text style={{ fontSize: 24, fontWeight: 'bold' }}>DEMO</Text>
-                    <Icon name='photo-camera' onPress={() => this.props.navigation.navigate('Camera')} />
-                    <Icon name='send' onPress={() => this.props.navigation.navigate('Messages')}/>
+                <Header right>
+                    <Icon name='search' />
+                    <Text>Search</Text>
                 </Header>
-                <Text style={{ color: 'black', fontSize: 60 }}>Home</Text>
+                <Text style={{ color: 'black', fontSize: 60 }}>Search</Text>
             </View>
         )
     }

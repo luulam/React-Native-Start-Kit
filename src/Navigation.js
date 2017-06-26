@@ -1,24 +1,42 @@
+
+
 import React from 'react'
 import { Platform } from 'react-native'
-import { StackNavigator } from 'react-navigation';
+import { TabNavigator } from 'react-navigation';
 
-import Home from './scenes/Home'
+import Main from './scenes/Main'
+import Search from './scenes/Search'
+import NewPost from './scenes/NewPost'
+import Notification from './scenes/Notification'
+import Profile from './scenes/Profile'
 
-ScenesApp = {
-  Home: {
-    screen: Home,
-  }
-}
-
-const AppNavigator = StackNavigator(
-  {
-    ...ScenesApp
-  }, {
-    initialRouteName: 'Home',
-    mode: Platform.OS === 'ios' ? 'modal' : 'card',
-    headerMode: 'none',
-    cardStyle: { backgroundColor: 'transparent', shadowOpacity: 0 }
-  }
+const AppNavigator = TabNavigator(
+    {
+        Main: {
+            screen: Main,
+        },
+        Search: {
+            screen: Search,
+        },
+        NewPost: {
+            screen: NewPost,
+        },
+        Notification: {
+            screen: Notification,
+        },
+        Profile: {
+            screen: Profile,
+        }
+    },
+    {
+        tabBarPosition: 'bottom',
+        swipeEnabled: false,
+        tabBarOptions: {
+            activeTintColor: 'black',
+            showLabel: false,
+            showIcon: true,
+        }
+    }
 )
 
 export default AppNavigator

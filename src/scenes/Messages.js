@@ -9,21 +9,22 @@ import styles from './styles/Home'
 class Home extends Component {
     //oprion Header
     static navigationOptions = {
-        tabBarIcon: ({ tintColor }) => (
-            <Icon name='home' color={tintColor} />
-        ),
+        tabBarVisible: false
     };
 
+    static state = {
+        test: ''
+    }
     render() {
         const { navigate } = this.props.navigation;
         return (
             <View>
                 <Header>
-                    <Text style={{ fontSize: 24, fontWeight: 'bold' }}>DEMO</Text>
-                    <Icon name='photo-camera' onPress={() => this.props.navigation.navigate('Camera')} />
-                    <Icon name='send' onPress={() => this.props.navigation.navigate('Messages')}/>
+                    <Text style={{ fontSize: configs.font.big, fontWeight: '500', paddingHorizontal: 6 }}>Direct</Text>
+                    <Icon name='arrow-back' />
+                    <Icon name='add' />
                 </Header>
-                <Text style={{ color: 'black', fontSize: 60 }}>Home</Text>
+                <Text style={{ color: 'black', fontSize: 60 }}>Messages</Text>
             </View>
         )
     }
