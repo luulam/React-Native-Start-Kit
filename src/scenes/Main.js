@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { TabNavigator } from 'react-navigation'
+import { TabNavigator, TabBarBottom } from 'react-navigation'
 import Home from './Home'
 import Camera from './Camera'
 import Messages from './Messages'
@@ -16,6 +16,8 @@ const Navigation = TabNavigator({
   }
 },
   {
+    animationEnabled:false,
+    tabBarComponent: TabBarBottom,
     tabBarOptions: {
       style: {
         width: 0,

@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import { View, Text, TextInput } from 'react-native'
 import { Header, Icon } from '../components'
 import { configs, constants, arrays } from '../commons'
-import { showSnackBar, showToast } from '../redux/actions/App'
-import styles from './styles/Home'
+
 class Home extends Component {
     //oprion Header
     static navigationOptions = {
@@ -29,15 +28,5 @@ class Home extends Component {
         )
     }
 }
-const mapStateToProps = (state, ownProps) => {
-    return {
-        state: state
-    }
-}
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-        showSnackBar: (data) => dispatch(showSnackBar(data)),
-        showToast: (data) => dispatch(showToast(data))
-    }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+
+export default Home

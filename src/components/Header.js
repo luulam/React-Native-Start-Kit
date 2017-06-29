@@ -64,7 +64,7 @@ class Header extends Component {
 
     render() {
         return (
-            <View style={[styles.constant, { justifyContent: this.props.left ? null : 'space-between' }]}>
+            <View style={[styles.constant, { justifyContent: this.props.left ? null : 'space-between' },this.props.style]}>
                 {this.renderChilder()}
             </View>
         )

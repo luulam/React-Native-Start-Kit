@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { TabNavigator } from 'react-navigation'
+import { TabNavigator , TabBarBottom} from 'react-navigation'
 import { View, Text } from 'react-native'
 import { Icon } from '../components'
 import { configs, constants, arrays } from '../commons'
 import { showSnackBar, showToast } from '../redux/actions/App'
-import styles from './styles/Home'
+
 class Following extends Component {
     //oprion Header
     static navigationOptions = {
@@ -61,6 +61,7 @@ const Notification = TabNavigator(
         }
     },
     {
+        tabBarComponent: TabBarBottom,
         tabBarPosition: 'top',
         swipeEnabled: true,
         tabBarOptions: {

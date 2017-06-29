@@ -1,38 +1,33 @@
-## Dependencies
-- redux
-- react-native-elements
-- react-navigation
-- react-native-vector-icons
+# REACT-NATIVE-START_KIT
 
-## Usage
+Support me with a Follow 
+[**github**](https://github.com/luulam)
 
-```
-git clone https://github.com/luulam/expo-redux-start-kit.git
-cd expo-redux-start-kit
+[**facebook**](https://www.facebook.com/luu.bang.77)
 
-react-native run-ios    // runios,
-react-native run-android    // run android
-```
+# react-native-start-kit
+using react-native-start-kit (https://github.com/luulam/react-native-start-kit)
 
+##DEMO
 
-MIT License
+coming
 
-Copyright (c) 2017 Luu Lam
+## iOS Android App Preview
+coming
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+##Features/Components
+- Uses React Native 0.44.0
+- Navigation (https://reactnavigation.org/)
+- Redux (http://redux.js.org/)
+- Icon (https://github.com/oblador/react-native-vector-icons)
+- react-naitve-camera (https://github.com/lwansbrough/react-native-camera)
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+##Installation
+Once you have downloaded or cloned this repository, 
+run `npm install`or `yarn install` inside the directory.
+link library (Icon )`react-native link`
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+##Usage
+- [Setting up React Native for Android](https://facebook.github.io/react-native/docs/android-setup.html#content)
+- [Running app on Android Device](https://facebook.github.io/react-native/docs/running-on-device-android.html#content)
+- [Running app on iOS Device](https://facebook.github.io/react-native/docs/running-on-device-ios.html#content)

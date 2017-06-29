@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { Platform } from 'react-native'
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator , TabBarBottom } from 'react-navigation';
 
 import Main from './scenes/Main'
 import Search from './scenes/Search'
@@ -29,6 +29,7 @@ const AppNavigator = TabNavigator(
         }
     },
     {
+        tabBarComponent: TabBarBottom,
         tabBarPosition: 'bottom',
         swipeEnabled: false,
         tabBarOptions: {

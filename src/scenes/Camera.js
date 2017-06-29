@@ -1,37 +1,46 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Button } from 'react-native-elements';
-import { View, Text } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import { configs, constants, arrays } from '../commons'
+import { Header, Icon } from '../components'
 import { showSnackBar, showToast } from '../redux/actions/App'
-import styles from './styles/Home'
+import styles from './styles/Camera'
+import Camera from 'react-native-camera';
 class Home extends Component {
     //oprion Header
     static navigationOptions = {
         tabBarVisible: false
     };
 
-    static state = {
-        test: ''
-    }
     render() {
         const { navigate } = this.props.navigation;
         return (
-            <View style={styles.appConst}>
-                <Text style={{ color: 'black', fontSize: 60 }}>Camera</Text>
+            <View style={{flex:1}}>
+                <Camera
+                    ref={(cam) => {
+                        this.camera = cam;
+                    }}
+                    style={styles.cameraConst}
+                    aspect={Camera.constants.Aspect.fill}>
+
+                    <Header style={styles.header}>
+                        <Icon name='settings' color='white' />
+                        <Icon name='arrow-forward' onPress={() => this.props.navigation.navigate('Home')} color='white' />
+                    </Header>
+
+                    <TouchableOpacity
+                        onPress={() => this.takePicture()}
+                        style={styles.takeCamera}
+                    />
+                </Camera>
             </View>
         )
     }
-}
-const mapStateToProps = (state, ownProps) => {
-    return {
-        state: state
+    takePicture = () => {
+        const options = {};
+        this.camera.capture({ metadata: options })
+            .then((data) => console.log(data))
+            .catch(err => console.error(err));
     }
 }
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-        showSnackBar: (data) => dispatch(showSnackBar(data)),
-        showToast: (data) => dispatch(showToast(data))
-    }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default Home
