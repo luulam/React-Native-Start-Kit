@@ -15,8 +15,7 @@ export default style = {
         flexDirection: 'row',
         alignItems: 'center',
         height: 48,
-        borderBottomColor: '#c9c9c9',
-        borderBottomWidth: 0.2,
+        ...styles.appLine,
         paddingHorizontal: 14
 
     },

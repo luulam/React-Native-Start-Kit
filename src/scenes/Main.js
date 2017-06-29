@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { TabNavigator, TabBarBottom } from 'react-navigation'
+import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation'
 import Home from './Home'
 import Camera from './Camera'
 import Messages from './Messages'
-
+import Comments from './Comments'
 const Navigation = TabNavigator({
   Camera: {
     screen: Camera,
@@ -16,7 +16,9 @@ const Navigation = TabNavigator({
   }
 },
   {
-    animationEnabled:false,
+    initialRouteName: 'Home',
+    swipeEnabled: true,
+    animationEnabled: false,
     tabBarComponent: TabBarBottom,
     tabBarOptions: {
       style: {
@@ -24,9 +26,24 @@ const Navigation = TabNavigator({
         height: 0
       }
     },
-    initialRouteName: 'Home',
-    swipeEnabled: true,
+
   }
 )
 
-export default Navigation
+const ModalStack = StackNavigator({
+  Navigation: {
+    screen: Navigation,
+  },
+  Comments: {
+    screen: Comments,
+  }
+}, {
+    headerMode: 'none',
+    cardStyle: {
+      backgroundColor: 'white'
+    }
+  });
+
+
+
+export default ModalStack

@@ -55,6 +55,7 @@ class Header extends Component {
                     {[...text, ...other]}
                 </View>,
                 <View key='right'>
+                    {icon.length == 1 && <View style={{ width: 40 }} />}
                     {icon.length > 1 && icon.slice(1)}
                 </View>
             ]
@@ -64,7 +65,7 @@ class Header extends Component {
 
     render() {
         return (
-            <View style={[styles.constant, { justifyContent: this.props.left ? null : 'space-between' },this.props.style]}>
+            <View style={[styles.constant, { justifyContent: this.props.left ? null : 'space-between' }, this.props.style]}>
                 {this.renderChilder()}
             </View>
         )

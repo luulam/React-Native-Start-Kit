@@ -30,5 +30,9 @@ export default styles = {
     appTitle: {
         color: '#262626',
         fontWeight: '500'
+    },
+    appLine:{
+        borderBottomColor: '#c9c9c9',
+        borderBottomWidth: 0.4,
     }
 }

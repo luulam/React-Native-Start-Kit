@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { View, Text, ScrollView, FlatList, Image } from 'react-native'
+import { View, Text, ScrollView, FlatList, Image, TouchableOpacity } from 'react-native'
 import { Header, Icon } from '../components'
 import { fetchApp } from '../helper'
 import { configs, constants, arrays } from '../commons'
@@ -24,6 +24,30 @@ class Home extends Component {
             .catch()
     }
 
+    rendercomments = (args) => {
+        console.log('laksjdklajslkdjaslkdjalksjdlk', args)
+        if (args.length < 5) {
+            return args.map((val, ind) =>
+                <TouchableOpacity
+                    key={ind}
+                    onPress={() => this.props.navigation.navigate('Comments', { data: args })}>
+                    <Text style={styles.appLabel} >
+                        <Text style={styles.appTitle}>{val.name}</Text> {val.content}
+                    </Text>
+                </TouchableOpacity>)
+
+        }
+        return (
+            <TouchableOpacity
+                onPress={() => this.props.navigation.navigate('Comments', { data: args })}>
+                <Text style={styles.appLabel} >
+                    <Text style={styles.appTitle}>{args[0].name}</Text> {args[0].content}
+                </Text>
+                <Text style={styles.appTitle}>{`View all ${args.length} comments`}</Text>
+            </TouchableOpacity>
+        )
+    }
+
     renderPost = ({ item }) => {
         if (!item) return null
         return (
@@ -43,9 +67,7 @@ class Home extends Component {
                 </View>
                 <View style={{ paddingHorizontal: 10 }}>
                     <Text style={styles.appTitle}>{`${item['post']['like']} likes`}</Text>
-                    {item['post']['comment'].map((val, ind) =>
-                        <Text key={ind} style={styles.appLabel} ><Text style={styles.appTitle}>{val.name}</Text> {val.content}</Text>)
-                    }
+                    {this.rendercomments(item['post']['comment'])}
                 </View>
 
             </View >
