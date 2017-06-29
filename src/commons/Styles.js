@@ -25,11 +25,10 @@ export default styles = {
         marginRight: 4
     },
     appLabel: {
-        color: 'white',
-        fontSize: configs.font.medium
+        color: '#5D5D5D',
     },
     appTitle: {
-        fontWeight: 'bold',
-        fontSize: configs.font.big
+        color: '#262626',
+        fontWeight: '500'
     }
 }

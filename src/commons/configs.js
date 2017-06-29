@@ -20,12 +20,12 @@ export const configs = {
 
     },
     header: {
-        height: (Platform.OS === 'ios') ? 48 : 54,
+        height: (Platform.OS === 'ios') ? 48 : 48,
     },
     icons: {
         tiny: 15,
         small: 20,
-        medium: 30,
+        medium: 26,
         large: 45,
         xl: 50
     },

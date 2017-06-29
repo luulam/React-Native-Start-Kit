@@ -7,7 +7,9 @@ const styles = {
         flexDirection: 'row',
         width: configs.screenWidth,
         height: configs.header.height,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        shadowOpacity: 1,
+        elevation: 1
     },
 }
 export default styles

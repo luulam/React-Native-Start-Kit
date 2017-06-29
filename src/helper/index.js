@@ -1,6 +1,6 @@
 import { Platform, AsyncStorage } from 'react-native';
 import fetchApp from './Fetch'
-import asyncSto from './AppStorage'
+import asyncSto from './AsyncStorage'
 const getPlatformValue = function (iosValue, androidValue) {
     if (Platform.OS === 'ios') return iosValue;
     return androidValue
