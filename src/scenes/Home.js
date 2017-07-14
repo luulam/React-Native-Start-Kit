@@ -25,7 +25,6 @@ class Home extends Component {
     }
 
     rendercomments = (args) => {
-        console.log('laksjdklajslkdjaslkdjalksjdlk', args)
         if (args.length < 5) {
             return args.map((val, ind) =>
                 <TouchableOpacity

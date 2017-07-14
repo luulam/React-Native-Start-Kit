@@ -23,7 +23,6 @@ class Messages extends Component {
                     <Icon name='arrow-back' onPress={() => this.props.navigation.navigate('Home')} />
                     <Icon name='add' />
                 </Header>
-                <Text style={{ color: 'black', fontSize: 60 }}>Messages</Text>
             </View>
         )
     }

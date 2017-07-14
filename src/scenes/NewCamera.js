@@ -1,39 +1,42 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { View, Text, TouchableOpacity, Platform } from 'react-native'
+import { View, Text, TouchableOpacity } from 'react-native'
 import { configs, constants, arrays } from '../commons'
 import { Header, Icon } from '../components'
 import { showSnackBar, showToast } from '../redux/actions/App'
-import styles from './styles/Camera'
+import styles from './styles/NewCamera'
 import Camera from 'react-native-camera';
-class TakePhoto extends Component {
+
+
+class NewCamera extends Component {
     //oprion Header
     static navigationOptions = {
-        tabBarVisible: false
+        tabBarIcon: ({ tintColor }) => (
+            <Icon name='add-box' color={tintColor} size={34} />
+        ),
     };
 
     render() {
         const { navigate } = this.props.navigation;
         return (
             <View style={{ flex: 1 }}>
-                {Platform.OS === 'android' ? <Camera
+                <Header style={styles.header}>
+                    <Icon name='close' onPress={() => this.props.navigation.goBack()} />
+                    <Text>Camera</Text>
+                </Header>
+                <Camera
                     ref={(cam) => {
                         this.camera = cam;
                     }}
-                    style={styles.cameraConst}
+                    style={styles.camera}
                     aspect={Camera.constants.Aspect.fill}>
-
-                    <Header style={styles.header}>
-                        <Icon name='settings' color='white' />
-                        <Icon name='arrow-forward' onPress={() => this.props.navigation.navigate('Home')} color='white' />
-                    </Header>
-
+                </Camera>
+                <View style={{ justifyContent: 'center', alignItems: 'center',flex: 1 }}>
                     <TouchableOpacity
                         onPress={() => this.takePicture()}
                         style={styles.takeCamera}
                     />
-                </Camera> : null}
-
+                </View>
             </View>
         )
     }
@@ -44,4 +47,4 @@ class TakePhoto extends Component {
             .catch(err => console.error(err));
     }
 }
-export default TakePhoto
+export default NewCamera

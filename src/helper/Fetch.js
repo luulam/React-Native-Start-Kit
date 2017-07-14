@@ -1,7 +1,6 @@
 import { constants } from '../commons'
 
 const getTimeline = function (arg) {
-    console.log(constants.TIMELINE)
     return new Promise((resolve, reject) => {
         fetch(`${constants.TIMELINE}`)
             .then((response) => response.json())

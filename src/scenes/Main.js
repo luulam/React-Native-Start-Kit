@@ -19,6 +19,7 @@ const Navigation = TabNavigator({
     initialRouteName: 'Home',
     swipeEnabled: true,
     animationEnabled: false,
+    lazy: true,
     tabBarComponent: TabBarBottom,
     tabBarOptions: {
       style: {
