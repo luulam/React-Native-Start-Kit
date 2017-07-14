@@ -20,14 +20,5 @@ export default style = {
         margin: 0.5,
         width: configs.screenWidth / 4 - 1,
         height: configs.screenWidth / 4 - 1
-    },
-    takeCamera: {
-        width: 60,
-        height: 60,
-        alignItems: 'center',
-        borderColor: 'rgba(0, 0, 0, 0.2)',
-        backgroundColor: 'white',
-        borderRadius: 30,
-        borderWidth: 12
     }
 }

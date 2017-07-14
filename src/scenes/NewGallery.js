@@ -4,8 +4,10 @@ import { View, Text, TouchableOpacity, CameraRoll, FlatList, Image } from 'react
 import { configs, constants, arrays } from '../commons'
 import { Header, Icon } from '../components'
 import { showSnackBar, showToast } from '../redux/actions/App'
+import { coveSize } from '../helper'
 import styles from './styles/NewGallery'
-import Camera from 'react-native-camera';
+import Camera from 'react-native-camera'
+
 class NewCamera extends Component {
     //oprion Header
     static navigationOptions = {
@@ -44,7 +46,7 @@ class NewCamera extends Component {
                 </Header>
                 <View style={[styles.imageSelect]}>
                     {
-                        dataImageSlect ? <Image style={imageRe ? styles.imageSelect : this.coveSize(dataImageSlect['width'], dataImageSlect['height'])}
+                        dataImageSlect ? <Image style={imageRe ? styles.imageSelect : coveSize(dataImageSlect['width'] / dataImageSlect['height'])}
                             source={{ uri: dataImageSlect['uri'] }} />
                             : null
                     }
@@ -54,6 +56,8 @@ class NewCamera extends Component {
 
                 </View>
                 <FlatList
+                    style={{ margin: -1 }}
+                    removeClippedSubviews={false}
                     onEndReached={() => this.loadImage()}
                     numColumns={4}
                     keyExtractor={(item, index) => index}
@@ -63,16 +67,7 @@ class NewCamera extends Component {
             </View >
         )
     }
-    coveSize = (width, height) => {
-        if (width < height) return {
-            height: configs.screenWidth,
-            width: configs.screenWidth * (width / height)
-        }
-        return {
-            width: configs.screenWidth,
-            height: configs.screenWidth / (width / height)
-        }
-    }
+
     loadImage = () => {
         const { infoLoadImageLast, arrImages } = this.state
         let param

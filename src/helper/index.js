@@ -1,4 +1,5 @@
 import { Platform, AsyncStorage } from 'react-native';
+import { configs } from '../commons'
 import fetchApp from './Fetch'
 import asyncSto from './AsyncStorage'
 const getPlatformValue = function (iosValue, androidValue) {
@@ -20,7 +21,16 @@ const getObj = function (obj, ...args) {
     }
     return obj;
 }
-
+const coveSize = (ratio) => {
+    if (ratio < 1) return {
+        height: configs.screenWidth,
+        width: configs.screenWidth * (ratio)
+    }
+    return {
+        width: configs.screenWidth,
+        height: configs.screenWidth / (ratio)
+    }
+}
 const promise = () => action => next => (
     typeof action.then === 'function'
         ? Promise.resolve(action).then(next, (error) => { throw error })
@@ -38,7 +48,9 @@ export {
     isNull,
     getObj,
     promise,
+    coveSize,
     checkObjectInArray,
     fetchApp,
-    asyncSto
+    asyncSto,
+    
 }

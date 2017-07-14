@@ -41,7 +41,7 @@ class Comments extends Component {
         return (
             <View >
                 <Header>
-                    <Icon name='arrow-back' onPress={() => this.props.navigation.navigate('Home')} />
+                    <Icon name='arrow-back' onPress={() => this.props.navigation.goBack()} />
                     <Text style={styles.appTitle}>Comments</Text>
                 </Header>
 
