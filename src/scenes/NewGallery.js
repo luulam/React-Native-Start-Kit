@@ -39,7 +39,7 @@ class NewCamera extends Component {
         const { arrImages, imageRe, imageSelect } = this.state
         const dataImageSlect = arrImages.length != 0 ? arrImages[imageSelect]['node']['image'] : undefined
         return (
-            <View style={{ flex: 1 }}>
+            <View style={styles.appConst}>
                 <Header style={styles.header}>
                     {/* <Icon name='close' onPress={() => this.props.navigation.goBack()} /> */}
                     <Text style={styles.appTitle}>Gallery</Text>

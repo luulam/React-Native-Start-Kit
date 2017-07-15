@@ -19,7 +19,7 @@ class NewCamera extends Component {
     render() {
         const { navigate } = this.props.navigation;
         return (
-            <View style={{ flex: 1 }}>
+            <View style={styles.appConst}>
                 <Header style={styles.header}>
                     <Icon name='close' onPress={() => this.props.navigation.goBack()} />
                     <Text>Camera</Text>

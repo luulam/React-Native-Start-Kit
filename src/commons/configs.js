@@ -6,7 +6,7 @@ export const configs = {
     screenWidth: width < height ? width : height,
     screenHeight: width < height ? height : width,
     navBarHeight: (Platform.OS === 'ios') ? 64 : 54,
-    statusBarHeight: 22,
+    statusBarHeight: Platform.OS === 'ios' ? 22 : 0,
     paddingHorizontal: 12,
     paddingVertical: 8,
     toolBarHeight: 54,
@@ -36,7 +36,7 @@ export const configs = {
         logo: 200
     },
     font: {
-        big:16,
+        big: 16,
         medium: 14,
         small: 12,
         tiny: 8

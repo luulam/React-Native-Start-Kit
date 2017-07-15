@@ -53,12 +53,10 @@ class You extends Component {
         </View>
     }
     render() {
-
         const { navigate } = this.props.navigation;
         const { data } = this.state
-        console.log('kajhsdkjasd', data)
         return (
-            <View >
+            <View style={styles.appConst}>
                 <Header>
                     <Text style={{ fontSize: configs.font.big, fontWeight: '500', paddingHorizontal: 6 }}>Notification</Text>
                 </Header>

@@ -3,6 +3,7 @@ import arrays from './Arrays'
 import constants from './Constants'
 import colors from './Colors'
 import styles from './Styles'
+import images from './Images'
 
 export {
     configs,
@@ -10,4 +11,5 @@ export {
     constants,
     styles,
     colors,
+    images
 }

@@ -15,7 +15,6 @@ export default style = {
         bottom: 10,
         left: 10
     },
-
     imgArr: {
         margin: 0.5,
         width: configs.screenWidth / 4 - 1,

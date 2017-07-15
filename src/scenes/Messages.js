@@ -17,7 +17,7 @@ class Messages extends Component {
     render() {
         const { navigate } = this.props.navigation;
         return (
-            <View >
+            <View style={styles.appConst}>
                 <Header>
                     <Text style={{ fontSize: configs.font.big, fontWeight: '500', paddingHorizontal: 6 }}>Direct</Text>
                     <Icon name='arrow-back' onPress={() => this.props.navigation.navigate('Home')} />

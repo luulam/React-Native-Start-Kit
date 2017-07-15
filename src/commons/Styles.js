@@ -3,9 +3,13 @@ import configs from './Configs'
 import colors from './Colors'
 
 export default styles = {
+    app: {
+        paddingTop: configs.statusBarHeight,
+        flex: 1,
+        backgroundColor: 'transparent'
+    },
     appConst: {
         flex: 1,
-        paddingTop: configs.statusBarHeight,
         backgroundColor: colors.background
     },
     appHor: {

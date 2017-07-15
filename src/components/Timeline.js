@@ -28,7 +28,7 @@ class Timeline extends Component {
         }
         return (
             <TouchableOpacity
-                 onPress={() => this.props.onPress(args)}>
+                onPress={() => this.props.onPress(args)}>
                 <Text style={styles.appLabel} >
                     <Text style={styles.appTitle}>{args[0].name}</Text> {args[0].content}
                 </Text>
@@ -64,15 +64,14 @@ class Timeline extends Component {
     render() {
         let { data, viewOnlyImage } = this.props
         return (
-            <View >
-                <FlatList
-                    removeClippedSubviews={false}
-                    showsVerticalScrollIndicator={false}
-                    keyExtractor={(item, index) => index}
-                    data={data}
-                    renderItem={this.renderPost}
-                />
-            </View >
+            <FlatList
+                {...this.props}
+                removeClippedSubviews={false}
+                showsVerticalScrollIndicator={false}
+                keyExtractor={(item, index) => index}
+                data={data}
+                renderItem={this.renderPost}
+            />
         )
     }
 }

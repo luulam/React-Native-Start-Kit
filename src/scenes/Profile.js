@@ -25,7 +25,7 @@ class Home extends Component {
         const { navigate } = this.props.navigation;
         let { dataProfile, viewOnlyImage } = this.state
         return (
-            <View >
+            <View style={styles.appConst}>
                 <Header left>
                     <Text style={styles.appTitle}>luu_the_lam</Text>
                     <Icon name='restore' />

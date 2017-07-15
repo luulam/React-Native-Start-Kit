@@ -1,119 +1,230 @@
-[
-    {
-        "profile": {
-            "name":"tranghy.1603",
-            "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg"
+{
+    "newsfeed": [
+        {
+            "profile": {
+                "name": "tranghy.1603",
+                "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg"
+            },
+            "post": {
+                "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-15/e35/19429240_328983444191740_1422015546597048320_n.jpg?se=7",
+                "like": 4058,
+                "ratio": 1,
+                "time": "",
+                "comment": [
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "tranghy.1603",
+                        "content": "Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "bof._.15",
+                        "content": "Quay gì v ạ :)))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "tranghy.1603",
+                        "content": "Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "bof._.15",
+                        "content": "Quay gì v ạ :)))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "tranghy.1603",
+                        "content": "Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "bof._.15",
+                        "content": "Quay gì v ạ :)))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    }
+                ]
+            }
         },
-        "post":{
-            "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-15/e35/19429240_328983444191740_1422015546597048320_n.jpg?se=7",
-            "like":4058,
-            "ratio":1,
-            "time":"",
-            "comment":[
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"tranghy.1603",
-                    "content":"Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"bof._.15",
-                    "content":"Quay gì v ạ :)))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-              {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"tranghy.1603",
-                    "content":"Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"bof._.15",
-                    "content":"Quay gì v ạ :)))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },{
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"tranghy.1603",
-                    "content":"Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"bof._.15",
-                    "content":"Quay gì v ạ :)))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                }
-            ]
-        }
-    },
-    {
-        "profile": {
-            "name":"tranghy.1603",
-            "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg"
+        {
+            "profile": {
+                "name": "luu_the_lam",
+                "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/15877193_1870112409891624_5358819450994819072_n.jpg"
+            },
+            "post": {
+                "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-15/e35/18888402_1188623407933773_1313075049753739264_n.jpg?se=7",
+                "ratio":1,
+                "like": 4058,
+                "time": "",
+                "comment": [
+                    {
+                        "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/15877193_1870112409891624_5358819450994819072_n.jpg",
+                        "name": "luu_the_lam",
+                        "content": "#butterfly",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s320x320/17881179_1327020924051239_5237531429981650944_a.jpg",
+                        "name": "giangnamha",
+                        "content": "Bím",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s320x320/18645568_301261020322194_7435805260985139200_a.jpg",
+                        "name": "bibo150693",
+                        "content": "Đm luu_lam mới sợ",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/15877193_1870112409891624_5358819450994819072_n.jpg",
+                        "name": "luu_the_lam",
+                        "content": "@bibo150693 đm mới sợ",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s320x320/18645568_301261020322194_7435805260985139200_a.jpg",
+                        "name": "bibo150693",
+                        "content": "@luu_the_lam haha",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    }
+                ]
+            }
         },
-        "post":{
-            "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-15/e35/19428886_243128002847908_1110663703633592320_n.jpg?se=7",
-            "like":4058,
-            "ratio":1,
-            "time":"",
-            "comment":[
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"tranghy.1603",
-                    "content":"Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"bof._.15",
-                    "content":"Quay gì v ạ :)))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                },
-                {
-                  "image":"https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
-                    "name":"thaosstagram",
-                    "content":"Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
-                    "time":"2017-06-28T23:57:10.000Z"
-                }
-            ]
+        {
+            "profile": {
+                "name": "tranghy.1603",
+                "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg"
+            },
+            "post": {
+                "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-15/e35/19428886_243128002847908_1110663703633592320_n.jpg?se=7",
+                "like": 4058,
+                "ratio": 1,
+                "time": "",
+                "comment": [
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "tranghy.1603",
+                        "content": "Nhìu khi đi quay thấy còn ăn ún đàng quàng hơn ở nhà á !!!",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "bof._.15",
+                        "content": "Quay gì v ạ :)))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    },
+                    {
+                        "image": "https://instagram.fhan3-1.fna.fbcdn.net/t51.2885-19/s150x150/19367895_317432235364500_4219807691897307136_a.jpg",
+                        "name": "thaosstagram",
+                        "content": "Quay quảng cáo của chị Đông Nhi phải hôn Changgg :))",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    }
+                ]
+            }
+        },
+        {
+            "profile": {
+                "name": "luu_the_lam",
+                "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/15877193_1870112409891624_5358819450994819072_n.jpg"
+            },
+            "post": {
+                "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-15/e35/16123160_1847679702174375_1118359739567177728_n.jpg?se=7",
+                "ratio":1,
+                "like": 1000,
+                "time": "",
+                "comment": [
+                    {
+                        "image": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/15877193_1870112409891624_5358819450994819072_n.jpg",
+                        "name": "luu_the_lam",
+                        "content": "#chóhó",
+                        "time": "2017-06-28T23:57:10.000Z"
+                    }
+                ]
+            }
         }
-    }
-]
+    ],
+    "stories": [
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/19428766_1219438588157948_6825595102346346496_a.jpg",
+            "name": "ha__hoaa",
+            "imgPost": "",
+            "see": false
+        },
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/14482193_211954805888654_388847346634457088_a.jpg",
+            "name": "heo2409",
+            "imgPost": "",
+            "see": false
+        },
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/19984223_1336790443106501_588892071285227520_a.jpg",
+            "name": "district.vy",
+            "imgPost": "",
+            "see": true
+        },
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/16229444_1483018205072126_8994056543146082304_a.jpg",
+            "name": "dat_nguyen.adn",
+            "imgPost": "",
+            "see": false
+        },
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/19120626_1375244229195989_3138387527228981248_a.jpg",
+            "name": "anly1712",
+            "imgPost": "",
+            "see": false
+        },
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/19428655_529034300553632_7491730549837398016_a.jpg",
+            "name": "_dieugiandi_",
+            "imgPost": "",
+            "see": true
+        },
+        {
+            "avatar": "https://instagram.fhan5-1.fna.fbcdn.net/t51.2885-19/s150x150/16908887_1863610690595328_6898759818694098944_a.jpg",
+            "name": "linhchenggg",
+            "imgPost": "",
+            "see": false
+        }
+    ]
+}

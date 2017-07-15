@@ -28,5 +28,18 @@ export default style = {
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 4
+    },
+    constHeader: {
+        flexDirection: 'row',
+        marginTop: 1,
+        paddingHorizontal: 12,
+        paddingVertical: 6,
+        justifyContent: 'space-between',
+        borderBottomColor: colors.cover
+    },
+    header: {
+        paddingVertical: 6,
+        borderBottomColor: colors.cover,
+        borderBottomWidth: 0.3
     }
 }
