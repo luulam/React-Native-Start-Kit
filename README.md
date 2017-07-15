@@ -9,11 +9,12 @@ Support me with a Follow
 using react-native-start-kit (https://github.com/luulam/react-native-start-kit)
 
 ##DEMO
+[![App Store Button](http://imgur.com/y8PTxr9.png "App Store Button")]()
+[![Play Store Button](http://imgur.com/utWa1co.png "Play Store Button")]()
 
-coming
+## Android App Preview
 
-## iOS Android App Preview
-coming
+![Preview 1](https://giant.gfycat.com/LividPerfectDuck.webm )
 
 ##Features/Components
 - Uses React Native 0.44.0
@@ -21,11 +22,15 @@ coming
 - Redux (http://redux.js.org/)
 - Icon (https://github.com/oblador/react-native-vector-icons)
 - react-naitve-camera (https://github.com/lwansbrough/react-native-camera)
+- FlatList
+## Installation
 
-##Installation
 Once you have downloaded or cloned this repository, 
 run `npm install`or `yarn install` inside the directory.
-link library (Icon )`react-native link`
+link library (Icon, react-naitve-camera  )`react-native link`
+
+## Test
+
 
 ##Usage
 - [Setting up React Native for Android](https://facebook.github.io/react-native/docs/android-setup.html#content)

@@ -6,7 +6,7 @@ export const configs = {
     screenWidth: width < height ? width : height,
     screenHeight: width < height ? height : width,
     navBarHeight: (Platform.OS === 'ios') ? 64 : 54,
-    statusBarHeight: Platform.OS === 'ios' ? 22 : 0,
+    statusBarHeight: Platform.OS === 'ios' ? 22 : 22,
     paddingHorizontal: 12,
     paddingVertical: 8,
     toolBarHeight: 54,
