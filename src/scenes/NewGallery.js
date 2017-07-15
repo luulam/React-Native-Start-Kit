@@ -41,8 +41,8 @@ class NewCamera extends Component {
         return (
             <View style={{ flex: 1 }}>
                 <Header style={styles.header}>
-                    <Icon name='close' onPress={() => this.props.navigation.goBack()} />
-                    <Text>Gallery</Text>
+                    {/* <Icon name='close' onPress={() => this.props.navigation.goBack()} /> */}
+                    <Text style={styles.appTitle}>Gallery</Text>
                 </Header>
                 <View style={[styles.imageSelect]}>
                     {

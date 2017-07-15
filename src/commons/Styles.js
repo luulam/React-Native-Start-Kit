@@ -29,10 +29,16 @@ export default styles = {
     },
     appTitle: {
         color: '#262626',
-        fontWeight: '500'
+        fontWeight: '500',
+        fontSize: configs.font.big,
     },
-    appLine:{
+    appLine: {
         borderBottomColor: '#c9c9c9',
         borderBottomWidth: 0.4,
+    },
+    appPaddingButton: {
+        paddingHorizontal: 8,
+        paddingVertical: 4,
+        borderRadius: 4
     }
 }

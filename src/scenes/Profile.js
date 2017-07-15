@@ -27,7 +27,7 @@ class Home extends Component {
         return (
             <View >
                 <Header left>
-                    <Text style={{ fontSize: configs.font.big, fontWeight: '500', paddingHorizontal: 6 }}>luu_the_lam</Text>
+                    <Text style={styles.appTitle}>luu_the_lam</Text>
                     <Icon name='restore' />
                     <Icon name='person-add' />
                     <Icon name='more-vert' />
