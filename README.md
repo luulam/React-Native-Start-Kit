@@ -1,38 +1,75 @@
 # REACT-NATIVE-START_KIT
 
-Support me with a Follow 
-[**github**](https://github.com/luulam)
+boilerplate for React Native
 
-[**facebook**](https://www.facebook.com/luu.bang.77)
+## Example
+![](/demo.gif?raw=true) 
 
-# react-native-start-kit
-using react-native-start-kit (https://github.com/luulam/react-native-start-kit)
+## Key Features
 
-##DEMO
-[![App Store Button](http://imgur.com/y8PTxr9.png "App Store Button")]()
-[![Play Store Button](http://imgur.com/utWa1co.png "Play Store Button")]()
-
-## Android App Preview
-
-![Preview 1](https://giant.gfycat.com/LividPerfectDuck.webm )
-
-##Features/Components
-- Uses React Native 0.44.0
-- Navigation (https://reactnavigation.org/)
-- Redux (http://redux.js.org/)
-- Icon (https://github.com/oblador/react-native-vector-icons)
-- react-naitve-camera (https://github.com/lwansbrough/react-native-camera)
+- boilerplate
+- react-naitve-camera
 - FlatList
-## Installation
+- redux (redux-thunk)
+- custom Dialog (using redux)
+- custom Toast (using redux)
 
-Once you have downloaded or cloned this repository, 
-run `npm install`or `yarn install` inside the directory.
-link library (Icon, react-naitve-camera  )`react-native link`
+## Install
 
-## Test
+Once you have downloaded or cloned this repository, follow
+you can use **yarn** or **npm**
+install node_module
 
+```sh
+$ yarn # or  npm
+```
 
-##Usage
+```sh
+$ react-native link
+```
+runs your app in development mode start post
+
+```sh
+$ react-native start
+```
+
+build app android or ios
+
+```sh
+$ react-native run-android #build for android
+$ react-native run-ios #build for ios
+```
+
+## Usage
+
 - [Setting up React Native for Android](https://facebook.github.io/react-native/docs/android-setup.html#content)
 - [Running app on Android Device](https://facebook.github.io/react-native/docs/running-on-device-android.html#content)
 - [Running app on iOS Device](https://facebook.github.io/react-native/docs/running-on-device-ios.html#content)
+
+## Made with help of
+
+- [redux](https://redux.js.org/)
+- [react-native](https://github.com/facebook/react-native)
+- [react-navigation](https://github.com/react-community/react-navigation)
+- [eact-naitve-camera] (https://github.com/lwansbrough/react-native-camera)
+
+## Can I hire you guys?
+
+Yes!simply leave us a message to [luulam0911@gmail.com](mailto:luulam0911@gmail.com). We will be happy to work with you!
+
+## License
+
+[LUULAM](LICENSE.txt) license.
+
+## How can I support developers?
+
+- Star our GitHub repo :star:
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow us on [Github](https://github.com/luulam) :feet:
+- add friend [Facebook](https://www.facebook.com/luu.bang.77/) :thumbsup:
+- blog [luulam.github.io](luulam.github.io)
+
+### From Luulam
+
+Enjoy :metal:
+We're always happy to receive your feedback!
